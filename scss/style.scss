@@ -1,0 +1,49 @@
+@import "_normalize";
+$PNb: 'ProximaNova-Black';
+$RNl: 'ProximaNova-Light';
+$PN: 'ProximaNova-Regular';
+$PNs: 'ProximaNova-Semibold';
+$G: 'Georgia';
+$PrN: 'Proxima Nova';
+$Fontello: 'fontello';
+
+
+$normal: normal;
+$italic: italic;
+$bold: bold;
+$semibold: 600;
+$medium: 500;
+$heavy: 700;
+$black: 900;
+$light: 300;
+
+$dir:'../fonts/';
+$bgcolor:#a07262;
+$wt:#fff;
+$bk:#000;
+$accentcolor:#c5a07c;
+$ttl:31px;
+
+
+@mixin font($fontname, $fweight, $fstyle, $fontfamily){
+    @font-face {
+                font-family: $fontfamily;
+                src: url($dir+$fontname+'.eot');
+                src: url($dir+$fontname+'.eot') format("eot"),
+                     url($dir+$fontname+'.ttf') format("truetype");
+                font-weight: $fweight;
+                font-style: $fstyle;
+    }
+}
+@include font($PNb, $black, $normal, $PrN);
+@include font($RNl, $light, $normal, $PrN);
+@include font($PNs, $semibold, $normal, $PrN);
+@include font($G, $normal, $normal, $G);
+@include font($PN, $normal, $normal, $PrN);
+
+@include font($Fontello, $normal, $normal, $Fontello);
+.demo-icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+}
