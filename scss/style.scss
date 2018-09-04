@@ -1,12 +1,11 @@
 @import "_normalize";
-$PNb: 'ProximaNova-Black';
-$RNl: 'ProximaNova-Light';
-$PN: 'ProximaNova-Regular';
-$PNs: 'ProximaNova-Semibold';
-$G: 'Georgia';
-$PrN: 'Proxima Nova';
-$Fontello: 'fontello';
-
+$R: 'Roboto-Regular';
+$Ri: 'Roboto-Italic';
+$DINCB: 'DINPro-CondensedBold';
+$UB: 'Ubuntu-Bold';
+$RN: 'Roboto';
+$DINCBN: 'DINPro CondensedBold';
+$UN: 'Ubuntu';
 
 $normal: normal;
 $italic: italic;
@@ -18,11 +17,11 @@ $black: 900;
 $light: 300;
 
 $dir:'../fonts/';
-$bgcolor:#a07262;
+$bgcolor:#d4f2ff;
 $wt:#fff;
 $bk:#000;
-$accentcolor:#c5a07c;
-$ttl:31px;
+$ttl:36px;
+$fz:16px;
 
 
 @mixin font($fontname, $fweight, $fstyle, $fontfamily){
@@ -35,15 +34,8 @@ $ttl:31px;
                 font-style: $fstyle;
     }
 }
-@include font($PNb, $black, $normal, $PrN);
-@include font($RNl, $light, $normal, $PrN);
-@include font($PNs, $semibold, $normal, $PrN);
-@include font($G, $normal, $normal, $G);
-@include font($PN, $normal, $normal, $PrN);
+@include font($R, $normal, $normal, $RN);
+@include font($Ri, $normal, $italic, $RN);
+@include font($DINCB, $bold, $normal, $DINCBN);
+@include font($UB, $bold, $normal, $UN);
 
-@include font($Fontello, $normal, $normal, $Fontello);
-.demo-icon {
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-}
