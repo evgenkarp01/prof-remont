@@ -153,9 +153,13 @@ a {
 }
 
 .btn {
-  max-width: 300px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .btn button {
+  margin-left: auto;
+  margin-right: auto;
   width: 260px;
   height: 35px;
   background: none;
@@ -168,9 +172,63 @@ a {
   line-height: 14px;
 }
 
+.ttl {
+  text-align: center;
+}
+.ttl h1 {
+  font-family: Ubuntu;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 43px;
+}
+.ttl h2 {
+  font-family: Ubuntu;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+}
+.ttl h4 {
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
+}
+
 body {
   font-family: Roboto, Tahoma, sans-serif;
   font-size: 16px;
+}
+
+.navigation-arrow {
+  width: 90px;
+  float: right;
+  margin-right: 10px;
+}
+.navigation-arrow .prev-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #727272;
+  margin: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+.navigation-arrow .prev-arrow img {
+  margin-top: 9px;
+}
+.navigation-arrow .next-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #727272;
+  margin: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+.navigation-arrow .next-arrow img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: 9px;
 }
 
 header {
@@ -236,4 +294,265 @@ nav .mmenu ul li.active a:after, nav .mmenu ul li:hover a:after {
   left: 0;
   bottom: -12px;
   border-bottom: 4px solid #7d92ff;
+}
+
+section {
+  position: relative;
+}
+section .cube {
+  top: 65px;
+  width: 45%;
+  min-height: 595px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+}
+section .cube-l {
+  left: 0;
+}
+section .cube-l .img {
+  position: absolute;
+  right: 55px;
+  top: 60px;
+}
+section .cube-l .img img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+section .cube-r {
+  right: 0;
+}
+section .cube-r .img {
+  position: absolute;
+  top: 50px;
+  left: 130px;
+}
+section .cube-r .img img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+section.one-screen {
+  min-height: 700px;
+  background: #d4f2ff;
+  position: relative;
+}
+section.one-screen .main-screen {
+  position: relative;
+  top: 102px;
+  z-index: 3;
+  min-height: 520px;
+  border-radius: 25px;
+  padding-top: 102px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+section.one-screen .btn-one-screen {
+  text-align: center;
+  margin-top: 120px;
+}
+section.one-screen .btn-one-screen button {
+  background: #ff9bab;
+  font-weight: bold;
+}
+section.two-screen .services {
+  margin-top: 72px;
+}
+section.two-screen .services-oplet {
+  flex-wrap: wrap;
+  margin-top: 41px;
+}
+section.two-screen .services-oplet .service {
+  width: 297px;
+  height: 297px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background-color: #ffedee;
+  text-align: center;
+  padding: 10px;
+  margin: 11px;
+  display: block;
+  float: left;
+}
+section.two-screen .services-oplet .service .ico img {
+  display: inline-block;
+}
+section.two-screen .services-oplet .service .ttl-service {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+section.two-screen .services-oplet .service p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+section.two-screen .services .bg-water {
+  background: url(../img/bg-water.png) no-repeat;
+  background-position: center center;
+}
+section.two-screen .services .bg-fire {
+  background: url(../img/bg-fire.png) no-repeat;
+  background-position: center center;
+}
+section.three-screen {
+  clear: both;
+  background: #d4f2ff;
+  min-height: 720px;
+  margin-top: 25px;
+}
+section.three-screen .cube {
+  top: 89px;
+}
+section.three-screen .stock-one {
+  padding: 25px 0;
+}
+section.three-screen .stock-one .stock-list {
+  position: relative;
+  z-index: 3;
+  top: 47px;
+  background: rgba(255, 255, 255, 0.8);
+  min-height: 549px;
+  border-radius: 15px;
+  padding: 60px 60px;
+}
+section.three-screen .stock-one .stock-list ul li {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  list-style: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+section.three-screen .stock-one .stock-list ul li .ico {
+  margin-right: 35px;
+}
+section.three-screen .stock-one .stock-list ul li .ico img {
+  max-width: 75px;
+  height: auto;
+}
+section.three-screen .stock-one .stock-list ul li:first-child {
+  margin: 0;
+}
+section.three-screen .stock-one .stock-list .stock-one-btn {
+  margin-top: 50px;
+}
+section.three-screen .stock-one .stock-list .stock-one-btn button {
+  background: #ff9bab;
+}
+section.four-screen .reviews {
+  margin-top: 69px;
+}
+section.four-screen .reviews-oplet {
+  margin-top: 54px;
+  align-items: baseline;
+}
+section.four-screen .reviews-oplet .review {
+  max-width: 213px;
+  text-align: center;
+  padding: 0 10px;
+}
+section.four-screen .reviews-oplet .review .desc {
+  margin-top: 28px;
+}
+section.four-screen .reviews-oplet .review .desc p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+section.five-screen {
+  margin-top: 73px;
+}
+section.five-screen .advantages-oplet {
+  margin-top: 52px;
+}
+section.five-screen .advantages .advantage-item .img-autor {
+  margin-right: 78px;
+  float: left;
+}
+section.five-screen .advantages .advantage-item .img-autor img {
+  max-width: 430px;
+  width: 100%;
+  height: auto;
+}
+section.five-screen .advantages .advantage-item .name-autor h3 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+section.five-screen .advantages .advantage-item .txt-autor {
+  margin-left: 78px;
+  margin-top: 33px;
+}
+section.five-screen .advantages .advantage-item .txt-autor p {
+  color: #696969;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  font-style: italic;
+}
+section.stock-two {
+  clear: both;
+  min-height: 620px;
+  background: url(../img/boiler-bg-stock-two.jpg);
+  background-position: center center;
+  position: relative;
+  margin-top: 70px;
+}
+section.stock-two .stock-two-oplet {
+  position: relative;
+  top: 71px;
+  text-align: center;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  min-height: 470px;
+}
+section.stock-two .stock-two-oplet .utp {
+  padding-top: 64px;
+}
+section.stock-two .stock-two-oplet .utp h2 {
+  font-family: Ubuntu;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+}
+section.stock-two .stock-two-oplet .desc {
+  margin-top: 39px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.stock-two .stock-two-oplet .call {
+  margin-top: 39px;
+}
+section.stock-two .stock-two-oplet .call .txt-phone {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 31px;
+}
+section.stock-two .stock-two-oplet .call .number-phone {
+  font-family: "DIN Pro";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 64px;
+}
+section.brands-screen {
+  padding-top: 70px;
+}
+section.brands-screen .brands-oplet {
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+section.brands-screen .brands-oplet .item {
+  margin: 5px 0;
 }

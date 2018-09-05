@@ -23,8 +23,9 @@ $wt:#fff;
 $bk:#000;
 $ttl:36px;
 $fz:16px;
-
-
+$shadow-cube: 0 0 10px rgba(0, 0, 0, 0.15);
+$white-bg:  rgba(255,255,255,0.8);
+$btn-color: #ff9bab;
 @mixin font($fontname, $fweight, $fstyle, $fontfamily){
     @font-face {
                 font-family: $fontfamily;
@@ -57,8 +58,12 @@ $fz:16px;
     align-items: center;
 }
 .btn{
-    max-width: 300px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
     button{
+        margin-left: auto;
+        margin-right: auto;
         width: 260px;
         height: 35px;
         background: none;
@@ -71,9 +76,60 @@ $fz:16px;
         line-height: 14px;
     }
 }
+.ttl{
+    text-align: center;
+    h1{
+        font-family: Ubuntu;
+        font-size: 48px;
+        font-weight: $bold;
+        line-height: 43px;
+    }
+    h2{
+        font-family: Ubuntu;
+        font-size: 36px;
+        font-weight: $bold;
+        line-height: 42px;
+    }
+    h4{
+        font-family: "Ubuntu";
+        font-size: 20px;
+        font-weight: $bold;
+        line-height: 23px;
+    }
+}
 body{
     font-family: Roboto, Tahoma, sans-serif;
     font-size: $fz;
+}
+.navigation-arrow{
+    width: 90px;
+    float: right;
+    margin-right: 10px;
+    .prev-arrow{
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #727272;
+        margin: 3px;
+        text-align: center;
+        cursor: pointer;
+        img{
+            margin-top: 9px;
+        }
+    }
+    .next-arrow{
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #727272;
+        margin: 3px;
+        text-align: center;
+        cursor: pointer;
+        img{
+            transform: rotate(180deg);
+            margin-top: 9px;
+        }
+    }
 }
 header{
     background: $bgcolor;
@@ -142,6 +198,303 @@ nav{
                     left: 0;
                     bottom: -12px;
                     border-bottom: 4px solid #7d92ff;
+                }
+            }
+        }
+    }
+}
+section{
+    position: relative;
+    .cube{
+        top: 65px;
+        width: 45%;
+        min-height: 595px;
+        box-shadow: $shadow-cube;
+        position: absolute;
+    }
+    .cube-l{
+        left: 0;
+        .img{
+            position: absolute;
+            right: 55px;
+            top: 60px;
+            img{
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .cube-r{
+        right: 0;
+        .img{
+            position: absolute;
+            top: 50px;
+            left: 130px;
+            img{
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &.one-screen{
+        min-height: 700px;
+        background: $bgcolor;
+        position: relative;
+        .main-screen{
+            position: relative;
+            top: 102px;
+            z-index: 3;
+            min-height: 520px;
+            border-radius: 25px;
+            padding-top: 102px;
+            background-color: $white-bg;
+        }
+        .btn-one-screen{
+            text-align: center;
+            margin-top: 120px;
+            button{
+                background: $btn-color;
+                font-weight: bold;
+            }
+        }
+    }
+    &.two-screen{
+        .services{
+            margin-top: 72px;
+                &-oplet{
+                    flex-wrap: wrap;
+                    margin-top: 41px;
+                    .service{
+                    width: 297px;
+                    height: 297px;
+                    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+                    border-radius: 8px;
+                    background-color: #ffedee;
+                    text-align: center;
+                    padding: 10px;
+                    margin: 11px;
+                    display: block;
+                    float: left;
+                        .ico{
+                            
+                            img{ display: inline-block;}
+                        }
+                        .ttl-service{
+                            margin-top: 5px;
+                            margin-bottom: 10px;
+                        }
+                        p{
+
+                            font-family: Roboto;
+                            font-size: $fz;
+                            font-weight: 400;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            .bg-water{
+                background: url(../img/bg-water.png)no-repeat;
+                background-position: center center;
+            }
+            .bg-fire{
+                background: url(../img/bg-fire.png)no-repeat;
+                background-position: center center;
+            }
+        }
+    }
+    &.three-screen{
+        clear: both;
+        background: $bgcolor;
+        min-height: 720px;
+        margin-top: 25px;
+        .cube{
+            top: 89px;
+        }
+        .cube-l{
+            
+        }
+        .cube-r{
+            
+        }
+        .stock{
+            
+        }
+        .stock-one{
+            padding: 25px 0;
+           .stock-ttl{
+               
+           }
+            .stock-list{
+                position: relative;
+                z-index: 3;
+                top: 47px;
+                background: $white-bg;
+                min-height: 549px;
+                border-radius: 15px;
+                padding: 60px 60px;
+                ul{
+                    li{
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        list-style: none;
+                        position: relative;
+                        display: flex;
+                        -webkit-align-items: center;
+                                align-items: center;
+                        margin: 20px 0;
+                        .ico{
+                            margin-right: 35px;
+                            img{
+                                max-width: 75px;
+                                height: auto;
+                            }
+                        }
+                        &:first-child{
+                            margin: 0;
+                        }
+                    }
+                }
+                .stock-one-btn{
+                    margin-top: 50px;
+                    button{
+                        background: $btn-color;
+                    }
+                }
+            }
+        }
+    }
+    &.four-screen{
+        .reviews{
+            margin-top: 69px;
+            &-oplet{
+                margin-top: 54px;
+                -webkit-align-items: baseline;
+                        align-items: baseline;
+                .review{
+                    max-width: 213px;
+                    text-align: center;
+                    padding: 0 10px;
+                    .ico{
+                        img{
+                            
+                        }
+                    }
+                    .desc{
+                        margin-top: 28px;
+                        p{
+                            font-family: Roboto;
+                            font-size: $fz;
+                            font-weight: 400;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.five-screen{
+        margin-top: 73px;
+        .advantages{
+            &-oplet{
+                margin-top: 52px;
+            }
+            .advantage-item{
+                .img-autor{
+                    margin-right: 78px;
+                    float: left;
+                    img{
+                        max-width: 430px;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .name-autor{
+                    
+                    h3{
+                        font-family: Roboto;
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: 28px;
+                    }
+                }
+                .txt-autor{
+                    margin-left: 78px;
+                    margin-top: 33px;
+                    p{
+                        color: #696969;
+                        font-family: Roboto;
+                        font-size: $fz;
+                        font-weight: 400;
+                        line-height: 23px;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+    &.stock-two{
+        clear: both;
+        min-height: 620px;
+        background: url(../img/boiler-bg-stock-two.jpg);
+        background-position: center center;
+        position: relative;
+        margin-top: 70px;
+        .stock-two-oplet{
+            position: relative;
+            top: 71px;
+            text-align: center;
+            border-radius: 15px;
+            background: $white-bg;
+            min-height: 470px;
+            .utp{
+                padding-top: 64px;
+                h2{
+                    font-family: Ubuntu;
+                    font-size: 36px;
+                    font-weight: $bold;
+                    line-height: 42px;
+                }
+            }
+            .desc{
+                margin-top: 39px;
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 26px;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .call{
+                margin-top: 39px;
+                .txt-phone{
+                    font-family: Roboto;
+                    font-size: 24px;
+                    font-weight: $bold;
+                    line-height: 31px;
+                }
+                .number-phone{
+                    font-family: "DIN Pro";
+                    font-size: 50px;
+                    font-weight: 400;
+                    line-height: 64px;
+                }
+            }
+        }
+    }
+    &.brands-screen{
+        padding-top: 70px;
+        .brands-oplet{
+            margin-top: 40px;
+            flex-wrap: wrap;
+            .item{
+                margin: 5px 0;
+                img{
+                    
                 }
             }
         }
