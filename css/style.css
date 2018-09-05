@@ -296,6 +296,22 @@ nav .mmenu ul li.active a:after, nav .mmenu ul li:hover a:after {
   border-bottom: 4px solid #7d92ff;
 }
 
+.call {
+  margin-top: 39px;
+}
+.call .txt-phone {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 31px;
+}
+.call .number-phone {
+  font-family: "DIN Pro";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 64px;
+}
+
 section {
   position: relative;
 }
@@ -531,21 +547,6 @@ section.stock-two .stock-two-oplet .desc {
   margin-left: auto;
   margin-right: auto;
 }
-section.stock-two .stock-two-oplet .call {
-  margin-top: 39px;
-}
-section.stock-two .stock-two-oplet .call .txt-phone {
-  font-family: Roboto;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 31px;
-}
-section.stock-two .stock-two-oplet .call .number-phone {
-  font-family: "DIN Pro";
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 64px;
-}
 section.brands-screen {
   padding-top: 70px;
 }
@@ -555,4 +556,148 @@ section.brands-screen .brands-oplet {
 }
 section.brands-screen .brands-oplet .item {
   margin: 5px 0;
+}
+section.six-screen {
+  margin-top: 70px;
+  min-height: 720px;
+  background: #d4f2ff;
+  position: relative;
+  padding: 20px 0;
+}
+section.six-screen .garant {
+  flex-wrap: wrap;
+  top: 45px;
+  position: relative;
+  z-index: 3;
+  height: 492px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+section.six-screen .garant .col-pol {
+  width: 50%;
+  padding: 0 50px;
+}
+section.six-screen .garant .col-pol .item {
+  text-align: center;
+}
+section.six-screen .garant .col-pol .item .ttl {
+  margin-top: 20px;
+}
+section.six-screen .garant .col-pol .item .ttl h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+section.six-screen .garant .col-pol .item .desc {
+  margin-top: 20px;
+}
+section.six-screen .garant .col-pol .item .desc p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+section.six-screen .garant .width-all {
+  width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.seven-screen {
+  margin-top: 70px;
+}
+section.seven-screen .contacts .contact {
+  margin-top: 52px;
+}
+section.seven-screen .contacts .contact .col-pol {
+  width: 50%;
+}
+section.seven-screen .contacts .contact .col-pol ul li {
+  margin: 12px 0;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+}
+section.seven-screen .contacts .contact .col-pol ul li .ico {
+  margin-right: 20px;
+}
+section.seven-screen .contacts .contact .col-pol .img img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+section.seven-screen .contacts .contact .col-pol .contacts-btn {
+  margin-top: 80px;
+}
+section.seven-screen .contacts .contact .col-pol .contacts-btn button {
+  background: #ff9bab;
+}
+
+footer {
+  min-height: 220px;
+  background-color: #3b3b3b;
+  color: #fff;
+  margin-top: 130px;
+  padding-top: 40px;
+}
+footer .footer-oplet .logo-f a {
+  font-family: "DIN Pro";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #fff;
+}
+footer .footer-oplet .phone-f a {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+}
+footer .footer-oplet .phone-f .ico {
+  margin-right: 10px;
+}
+footer .footer-oplet .phone-f strong {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 22px;
+}
+footer .footer-oplet .social-f ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 2px;
+}
+footer .offer {
+  text-align: center;
+  max-width: 956px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+}
+footer .offer p {
+  font-size: 12px;
+}
+footer .offer sup {
+  color: red;
+}
+footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  max-width: 956px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #6b6b6b;
+}
+footer .copyright p {
+  font-size: 12px;
+  padding: 3px;
+}
+footer .copyright p a {
+  color: green;
 }
