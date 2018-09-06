@@ -72,5 +72,63 @@ $( document ).ready(function() {
 		$('html,body').animate( { scrollTop: destination }, 400 );
 		return false;
 	});
+    
+    
+    
+    function call(ev) {
+ 	  var msg   = $(ev).closest('form').serialize();
+        $.ajax({
+          type: 'POST',
+          url: '../php/send.php',
+          data: msg,
+          success: function(data) {
+            $(ev).closest('.result').html(data);
+            $(ev).slideUp('fast');
+          },
+          error:  function(xhr, str){
+	    alert('Возникла ошибка: ' + xhr.responseCode);
+          }
+        });
+    }
+    
+    
+    $("#contacts-button").on("click", function(event){
+        event.preventDefault();
+         
+         if(($('[name="phone_c"]').val()!='')&&($('[name="phone_c"]').val()!='+7(___)___-__-__')){
+            call(this);
+         }
+    });
+    
+    $("#modal-button").on("click", function(event){
+        event.preventDefault();
+         
+         if(($('[name="phone"]').val()!='')&&($('[name="phone"]').val()!='+7(___)___-__-__')){
+            call(this);
+         }
+    });
+    
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

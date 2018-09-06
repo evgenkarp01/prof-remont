@@ -833,3 +833,9 @@ footer .copyright p a {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
+
+#contact_successfully {
+  padding: 10px 30px;
+  background: #00ff97;
+  border-radius: 8px;
+}
