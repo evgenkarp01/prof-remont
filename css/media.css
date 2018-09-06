@@ -1,0 +1,185 @@
+@media only screen and (max-width: 1300px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  section.two-screen .services-oplet {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  section.four-screen .reviews-oplet {
+    flex-wrap: wrap;
+  }
+
+  section.four-screen .reviews-oplet .review {
+    margin-bottom: 30px;
+  }
+
+  .section.four-screen .reviews-oplet .review .desc {
+    margin-top: 10px;
+  }
+
+  section.five-screen .advantages .advantage-item .img-autor {
+    float: none;
+    margin-right: 0;
+  }
+  section.five-screen .advantages .advantage-item .img-autor img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantage-item {
+    text-align: center;
+  }
+
+  section.five-screen .advantages .advantage-item .txt-autor {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .header--block {
+    flex-direction: column;
+  }
+
+  header .header--block > div {
+    margin-top: 10px;
+  }
+  header .header--block > div:last-child {
+    margin-bottom: 15px;
+  }
+
+  header .header--block .logo-h a {
+    font-size: 48px;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  nav .mmenu ul.mobile-menu {
+    position: absolute;
+    flex-direction: column;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.9);
+    height: auto;
+    top: 41px;
+    display: none;
+  }
+  nav .mmenu ul.mobile-menu li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #525252;
+    margin: 0;
+  }
+  nav .mmenu ul.mobile-menu li.active a:after, nav .mmenu ul.mobile-menu li:hover a:after {
+    border-bottom: none;
+  }
+  nav .mmenu ul.mobile-menu li a {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .ttl h1 br, .ttl h2 br, .ttl h3 br, .ttl h4 br {
+    display: none;
+  }
+
+  section .cube .img {
+    display: none;
+  }
+
+  .ttl h1 {
+    font-size: 42px;
+  }
+
+  section.one-screen .main-screen {
+    top: 90px;
+    padding-top: 40px;
+    padding-bottom: 62px;
+  }
+
+  section.four-screen .reviews-oplet {
+    justify-content: space-around;
+  }
+
+  section.brands-screen .brands-oplet {
+    justify-content: space-around;
+  }
+
+  section.six-screen .garant {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+
+  section.six-screen .garant .col-pol {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  section.seven-screen .contacts .contact {
+    flex-direction: column;
+  }
+  section.seven-screen .contacts .contact .col-pol {
+    width: 100%;
+  }
+  section.seven-screen .contacts .contact .col-pol:last-child {
+    margin-bottom: 40px;
+  }
+
+  .footer-oplet {
+    flex-direction: column;
+  }
+  .footer-oplet > div {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .ttl h1 {
+    font-family: Ubuntu;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 33px;
+  }
+
+  .ttl h2 {
+    font-family: Ubuntu;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 32px;
+  }
+
+  section.three-screen .stock-one .stock-list {
+    padding: 30px 15px;
+  }
+
+  section.three-screen .stock-one .stock-list ul li .ico {
+    margin-right: 17px;
+  }
+
+  section.stock-two .stock-two-oplet .utp h2 {
+    font-size: 30px;
+    line-height: 29px;
+  }
+
+  section.stock-two .stock-two-oplet .utp {
+    padding-top: 15px;
+  }
+
+  section.stock-two .stock-two-oplet .desc {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  section.stock-two .stock-two-oplet {
+    padding: 10px;
+  }
+
+  .call .number-phone {
+    font-size: 44px;
+  }
+}
